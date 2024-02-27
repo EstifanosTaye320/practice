@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/title_text.dart';
+import 'package:quiz_app/data/style_aid.dart';
+import 'package:quiz_app/resources/title_text.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final StyleAid styleAid = StyleAid();
+
     return SizedBox(
       width: double.infinity,
       child: Container(
@@ -24,9 +27,8 @@ class StartScreen extends StatelessWidget {
             OutlinedButton.icon(
               onPressed: () {},
               style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(40)),
+                foregroundColor: styleAid.textColor,
+                shape: styleAid.buttonShap,
               ),
               icon: const Icon(Icons.arrow_right_alt),
               label: const Text('Start Quiz'),
