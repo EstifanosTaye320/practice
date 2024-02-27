@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/screens/questions_screen.dart';
+// import 'package:quiz_app/screens/questions_screen.dart';
+// import 'package:quiz_app/screens/start_screen.dart';
+import 'package:quiz_app/screens/results_screen.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -24,7 +26,7 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
           ),
-          child: const QuestionsScreen(),
+          child: const ResultScreen(),
         ),
       ),
     );
